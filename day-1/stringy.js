@@ -22,7 +22,8 @@ E:
 
 function length(string) {
   // YOUR CODE BELOW HERE //
-
+var string1 = string[string.length]
+return "pionear"
   // YOUR CODE ABOVE HERE //
 }
 
