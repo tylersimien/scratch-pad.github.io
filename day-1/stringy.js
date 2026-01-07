@@ -22,8 +22,15 @@ E:
 
 function length(string) {
   // YOUR CODE BELOW HERE //
-var string1 = string[string.length]
-return "pionear"
+ //let str = "Operation Spark"
+ //var print = string
+return string.length
+console.log(string("Operation Spark"))
+ //console.log(string.length)
+//console.log(string["operation"])
+ 
+  //var input = string.length
+ //return(input["operation Spark"])
   // YOUR CODE ABOVE HERE //
 }
 
