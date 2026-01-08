@@ -2,6 +2,8 @@
 
 'use strict';
 
+const { replace } = require("lodash");
+
 /**
  * IN CLASS EXERCISE: stringy.js
  */
@@ -25,21 +27,15 @@ function length(string) {
  //let str = "Operation Spark"
  //var print = string
 return string.length
-console.log(string("Operation Spark"))
- //console.log(string.length)
-//console.log(string["operation"])
- 
-  //var input = string.length
- //return(input["operation Spark"])
   // YOUR CODE ABOVE HERE //
 }
-
+//console.log(length("hello"))
 /**
  * Given an input String, return a new String forced to lowercase.
  */
 function toLowerCase(string) {
   // YOUR CODE BELOW HERE //
-
+return string.toLowerCase()
   // YOUR CODE ABOVE HERE //
 }
 
@@ -48,7 +44,7 @@ function toLowerCase(string) {
  */
 function toUpperCase(string) {
   // YOUR CODE BELOW HERE //
-
+return string.toUpperCase()
   // YOUR CODE ABOVE HERE //
 }
 
@@ -66,10 +62,18 @@ function toUpperCase(string) {
  *      See: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace#Using_global_and_ignore_with_replace()
  */
 function toDashCase(string) {
-  // YOUR CODE BELOW HERE //
-
-  // YOUR CODE ABOVE HERE //
+ // console.log(string)
+  /**
+   * I: a string
+   * O: the input string with each space being a dash
+   * C:
+   */
+var lowerCase = string.toLowerCase()
+var split = lowerCase.split(' ')
+var dash =  split.join('-')
+return dash
 }
+
 
 /**
  * Given an input String and a single character, return true if the String
@@ -84,10 +88,25 @@ function toDashCase(string) {
  *      ensure uppercase and lowercase can be compared equally?
  */
 function beginsWith(string, char) {
+
   // YOUR CODE BELOW HERE //
+ /**
+  * i: it takes in a string and a char 
+  * o: returning true if the string is the first char
+  * c:
+  * e: 
+  */
+
+//compare string and char
+ if(string[0] === char){
+  return false
+  }else{
+    return true
+  }
 
   // YOUR CODE ABOVE HERE //
 }
+beginsWith('ty', 't')
 
 /**
  * Given an input String and a single character, return true if the String
