@@ -35,7 +35,14 @@
 
 function greeter(hour) {
   // YOUR CODE BELOW HERE //
-  
+  for(var i = 0; i < hour.length; i++){
+   // var greeterApp = []
+    if (hour[i] >= 11){
+      return ["Good Morning!"]
+    }else if (hour[i] <= 12 && hour >= 16){
+
+    }
+  }
   // YOUR CODE ABOVE HERE //
 }
 

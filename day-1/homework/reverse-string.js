@@ -2,6 +2,8 @@
 
 'use strict';
 
+const { reverse } = require("lodash");
+
 /**
  * 1: reverseString()
  *

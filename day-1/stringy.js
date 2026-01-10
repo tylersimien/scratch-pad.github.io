@@ -96,17 +96,21 @@ function beginsWith(string, char) {
   * c:
   * e: 
   */
-
+ return string.charAt(0).toLowerCase() === char.toLowerCase()
 //compare string and char
- if(string[0] === char){
-  return false
-  }else{
-    return true
-  }
+
+ //if(string[0] === char){
+  
+  //return true
+  //}else{
+   // return false
+  //}
+//}
+ //beginsWith('ty', 't')
 
   // YOUR CODE ABOVE HERE //
 }
-beginsWith('ty', 't')
+
 
 /**
  * Given an input String and a single character, return true if the String
@@ -122,6 +126,14 @@ beginsWith('ty', 't')
  */
 function endsWith(string, char) {
   // YOUR CODE BELOW HERE //
+ /**
+  * i; it given a string of a single character
+  * o; return true if the string equal to the end character of the string
+  * c; case insensitive
+  * 
+  * 
+  */
+return string.charAt(string.length - 1).toUpperCase() === char.toUpperCase()
 
   // YOUR CODE ABOVE HERE //
 }
@@ -133,7 +145,10 @@ function endsWith(string, char) {
  */
 function concat(stringOne, stringTwo) {
   // YOUR CODE BELOW HERE //
-
+var a = stringOne
+var b = stringTwo
+var c = a + b;
+return c
   // YOUR CODE ABOVE HERE //
 }
 
@@ -150,9 +165,11 @@ function concat(stringOne, stringTwo) {
 function join(stringOne, stringTwo) {
   // YOUR CODE BELOW HERE //
   var args = Array.from(arguments);
-
+ var join = args.join("")
+return join
   // YOUR CODE ABOVE HERE //
 }
+
 
 /**
  * Given two Strings, return the longest of the two.
@@ -165,7 +182,11 @@ function join(stringOne, stringTwo) {
  */
 function longest(stringOne, stringTwo) {
   // YOUR CODE BELOW HERE //
-
+if(stringOne.length > stringTwo.length){
+  return stringOne
+}else {
+  return stringTwo
+}
   // YOUR CODE ABOVE HERE //
 }
 
@@ -178,7 +199,13 @@ function longest(stringOne, stringTwo) {
  */
 function sortAscending(stringOne, stringTwo) {
   // YOUR CODE BELOW HERE //
-
+if(stringOne < stringTwo){
+  return 1
+}else if (stringOne > stringTwo){
+  return -1
+}else if(stringOne === stringTwo){
+  return 0
+}
   // YOUR CODE ABOVE HERE //
 }
 
@@ -191,7 +218,13 @@ function sortAscending(stringOne, stringTwo) {
  */
 function sortDescending(stringOne, stringTwo) {
   // YOUR CODE BELOW HERE //
-  
+  if (stringOne > stringTwo){
+    return 1
+  }else if (stringOne < stringTwo){
+    return -1
+  }else if (stringOne === stringTwo){
+    return 0
+  }
   // YOUR CODE ABOVE HERE //
 }
 

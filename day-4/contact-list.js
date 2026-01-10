@@ -35,6 +35,8 @@
 
 function makeContact(id, nameFirst, nameLast) {
   // Solve this function first
+  var obj = []
+  console.log 
 }
 
 function makeContactList() {
@@ -48,8 +50,23 @@ function makeContactList() {
     length: function(){
       return contacts.length;
     },
+    
+      addContact: function(contact){
+  
+      },
+      findContact: function(fullName){
+  
+      },
+      removeContact: function(){
+  
+      },
+      printAllContactNames: function(){
+  
+      },
+  
+   }
   }
-}
+
 
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
 if (
